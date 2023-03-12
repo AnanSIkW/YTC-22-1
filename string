@@ -1,0 +1,59 @@
+#include <iostream>
+#include <string>
+#include <regex>
+using namespace std;
+
+
+//
+// int main() { //6
+//	int counst = 0;
+//	string text;
+//	getline(cin, text);
+//	for (int i = 0; i < text.length(); i++)
+//		if (text[i] == ' ')
+//			counst++;
+//
+//	cout << counst + 1;
+//}
+//int main(){ //15
+//	string str ;
+//	getline(cin, str);
+//	if (str.length() > 10) {
+//		str.resize(6);
+//		cout << str;
+//	}
+//	else {
+//		str.resize(12, 'o');
+//		cout << str;
+//	}
+//		return 0;
+//}
+//		
+//int main()//10
+//{
+//    string str = "";
+//	  getline(cin, str);
+//    str += " ";
+//    string res = "", w = "";
+//    for (int i = 0; i < str.length(); i++)
+//    { if (str[i] == ' ')
+//        {
+//            res += w.substr(1, w.length() - 1) + " ";
+//            w = "";
+//        }
+//        else
+//        {
+//            w += str[i];
+//        }
+//    }
+//
+//    cout<<res;
+//}
+
+using namespace std; //19
+int main() {
+	string s ;
+	getline(cin, s);
+	s = regex_replace(s, regex("a"),"ab");
+	cout << s;
+}
